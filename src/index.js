@@ -6,7 +6,7 @@ const Filter = require('bad-words')
 const { generateMessage, generateLocationMessage } = require('./utils/messages')
 const { addUser, getUser, getUsersInRoom, removeUser } = require('./utils/users')
 
-const port = 3000 || process.env.PORT
+const port = process.env.PORT || 3000
 const publicDirectoryPath = path.join(__dirname, '../public')
 
 const app = express()
